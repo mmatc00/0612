@@ -1,0 +1,90 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{background-color: #ff6a00;}
+
+.header{width: 100%; height: 8vw; position: fixed; top: 0; left: 0;}
+.header>.logo{width: 8vw; height: 100%; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+.header img{width: 100%;}
+
+.menu{position: fixed; right: 2vw; top: 7vw; text-align: right;}
+.menu>li>a{font-family: 'SBAggroB'; font-size: 2vw; font-weight: 500; line-height: 150%;}
+.menu>li>a:hover{border-bottom: 0.35vw solid #000;}
+
+.l_menu{position: fixed; left: 2vw; top: 6vw;}
+.l_menu>li>a{font-family: 'SBAggroB'; font-size: 2vw; font-weight: 500; line-height: 150%;}
+.l_menu>li>a:hover{border-bottom: 0.35vw solid #000;}
+
+.l_sub{font-family: 'SBAggroB'; font-size: 1.4vw; font-weight: 500; line-height: 170%;}
+.l_sub>li>a:hover{border-bottom: 0.35vw solid #000;}
+
+/* title */
+.title{margin: 0 auto; height: 100vh; width: 50%; display: flex; align-items: center; justify-content: center;}
+.title>p{font-family: 'SBAggroB'; font-size: 6vw; font-weight: 500; text-align: center;}
+
+/* profile */
+.profile{height: 100vh; width: 600px; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
+.profile_1{text-align: center;}
+.profile_img{width: 180px; height: 250px; background-color: #000;}
+.profile_2{font-size: 18px; line-height: 200%; margin-top: 20px;}
+
+/* works */
+.section{width: 50%; margin: 0px auto;}
+.section1{display: flex; height: 100vh; justify-content: center; align-items: center; margin-top: 10vw;}
+.section1>img{height: 23vw;}
+
+.section2{display: flex; flex-direction: column; align-items: center; justify-content: space-around; height: 200vh;}
+.section2>img{height: 38vw;}
+
+.section3{display: flex; flex-direction: column; align-items: center; justify-content: space-around; height: 200vh;}
+.section3>img{height: 38vw;}
+
+.section4{display: flex; height: 100vh; justify-content: center; align-items: center;}
+.section4>img{height: 23vw;}
+
+
+/* contact */
+.contact{height: 100vh;}
+
+
+
+/* 태블릿 */
+@media all and (max-width:1024px){
+	.menu>li>a{font-size: 2.7vw;}
+    .l_menu>li>a{font-size: 2.5vw;}
+    .l_sub{font-size: 1.7vw;}
+
+    .section1{flex-direction: column; justify-content: center;}
+    .section1>img{height: 25vw; margin: 1vw 0;}
+    .section2>img{height: 46vw;}
+    .section3>img{height: 46vw;}
+    .section4{flex-direction: column; justify-content: center;}
+    .section4>img{height: 25vw; margin: 1vw 0;}
+
+
+}
+
+/* 모바일 */
+@media all and (max-width:768px){
+    .header{height: 12vw;}
+    .header>.logo{width: 13vw;}
+
+    .menu{top: 15vw;}
+    .l_menu{top: 13vw;}
+
+	.menu>li>a{font-size: 3.2vw;}
+    .l_menu>li>a{font-size: 3vw;}
+    .l_sub{font-size: 2.1vw;}
+
+    .section1>img{height: 40vw;}
+    .section2>img:nth-child(1){height: 80vw;}
+    .section2>img:nth-child(2){height: 60vw;}
+    .section3>img:nth-child(1){height: 80vw;}
+    .section3>img:nth-child(2){height: 53vw;}
+    .section4>img{height: 40vw;}
+}
